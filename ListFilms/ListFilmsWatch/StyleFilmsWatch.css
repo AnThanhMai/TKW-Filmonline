@@ -1,0 +1,360 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #393E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position: relative;
+    border: 1px solid #fff;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 5px #000;
+}
+header::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/squidgame.jpg') no-repeat center/cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+header::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+}
+
+
+header nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Edit phần thanh Nav */
+header nav .logo ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo ul li{
+    padding: 5px 10px;
+}
+header nav .logo ul li a{
+    border: 3px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li i{
+    margin: 0 5px;
+}
+/* Edit Dropdown Menu Button */
+header nav .logo .Dropdown{
+    width: 230px;
+    height: 200px;
+    background: linear-gradient(45deg, #62CDFF, #fff);
+    border-radius: 20px;
+    position: absolute;
+    display: none; 
+    min-width: 160px;
+    z-index: 1;
+}
+header nav .logo li:hover ul.Dropdown{
+    display: block;
+    margin-top: 15px;
+    display:block;
+    top: 42px;
+}
+header nav .logo .Dropdown li{
+    display: block;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+header nav .logo .Dropdown li a{
+    background-color: #EB455F;
+    color: #fff;
+}
+header nav .logo .Dropdown li a:hover{
+    background-color: #03C988;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+/* Edit thanh tìm kiếm */
+header nav .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search input{
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 15px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+header nav .search input:hover{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 1;
+}
+header nav .search input::placeholder{
+    color: #000;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* Edit phần nội dung trang */
+header section .contentfilms{
+    height: 550px;
+    margin: 10px ;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+header section .contentfilms .film{
+    box-shadow: 8px 10px 18px #000000;
+    border-radius: 20px;
+    width: 85%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+header section .contentfilms .film video{
+    width: 100%;
+    height: 100%;
+    border-radius:20px ;
+}
+header section .contentfilms .right{
+    margin-left: 15px;
+    border-radius: 10px;
+    width: 20%;
+    height: 100%;
+}
+header section .contentfilms .right .namefilm{
+    border-radius: 10px;
+    width: 100%;
+    height: 30%;
+    margin-top: 0;
+}
+header section .contentfilms .right .namefilm .name{
+    border-radius: 10px;
+    margin: 5px;
+    width: 95%;
+    height: 70%;
+}
+header section .contentfilms .right .namefilm .name h2{
+    margin: 0 10px;
+    width: 100%;
+    height: 70%;
+    color: #fff;
+    text-align: center;
+}
+header section .contentfilms .right .namefilm .name .IMDB{
+    padding: 7px;
+    margin-left: 40px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: yellow;
+}
+header section .contentfilms .right .namefilm .name i{
+    color: #fff;
+}
+header section .contentfilms .right .namefilm .name span .IMDB{
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    color: #000;
+    font-weight: bold;
+    background-color: yellow;
+}
+header section .contentfilms .right .namefilm .button{
+    margin-right: 2px;
+    margin-left: 15px;
+    padding: 5px;
+    width: 95%;
+    height: 20%;
+    align-items: center;
+}
+/* PLAY */
+header section .contentfilms .right .namefilm .button .Play{
+    background-color: #03C988;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+header section .contentfilms .right .namefilm .button .Play:hover{
+    cursor: pointer;
+    background-color: #03C988;
+    padding: 5px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 0%);
+    font-weight: bold;
+    opacity: 1;
+}
+/* PAUSE */
+header section .contentfilms .right .namefilm .button .Pause{
+    background-color: #EB455F;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+header section .contentfilms .right .namefilm .button .Pause:hover{
+    cursor: pointer;
+    background-color: #EB455F;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    opacity: 1;
+}
+/* FULLSCREEN */
+header section .contentfilms .right .namefilm .button .Full{
+    background-color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+header section .contentfilms .right .namefilm .button .Full:hover{
+    cursor: pointer;
+    background-color: orange;
+    padding: 5px;
+    border-radius: 10px;
+    color: #000000;
+    font-weight: bold;
+    opacity: 1;
+}
+header section .contentfilms .right .comments{
+    border: 3px solid #000000;
+    box-shadow: 2px 8px 8px black;
+    border-radius: 10px;
+    width: 100%;
+    height: 65%;
+    margin-top: 10px;
+}
+header section .contentfilms .right .comments .comment{
+    width: 100%;
+    height: 10%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    opacity: 0.7;
+}
+header section .contentfilms .right .comments .commentcreated{
+    border: 2px solid #000;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+}
+header section .contentfilms .right .comments .commentcreated .human{
+    border: 1px solid #fff;
+    background-color: #93BFCF;
+    width: 90%;
+    height: 20%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+}
+header section .contentfilms .right .comments .commentcreated .human .avt{
+    border: 1px solid #fff;
+    width: 30%;
+    height: 90%;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECF2FF;
+}
+header section .contentfilms .right .comments .commentcreated .human .avt i{
+    font-size: 30px;
+    color: #000;
+}
+header section .contentfilms .right .comments .commentcreated .human .text{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 13px;
+}
+header section .contentfilms .right .comments .commenttab{
+    border: 2px solid #000;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+header section .contentfilms .right .comments .commenttab input{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+header section .contentfilms .right .comments .commenttab input:hover{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 1;
+}

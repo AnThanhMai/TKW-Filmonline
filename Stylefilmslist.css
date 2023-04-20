@@ -1,0 +1,282 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #393E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position: relative;
+    border: 1px solid #fff;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 5px #000;
+}
+header::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/squidgame.jpg') no-repeat center/cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+header::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+}
+header nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo ul li{
+    padding: 5px 10px;
+}
+header nav .logo ul li a{
+    border: 3px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li i{
+    margin: 0 5px;
+}
+/* Edit Dropdown Menu Button */
+header nav .logo .Dropdown{
+    width: 230px;
+    height: 200px;
+    background: linear-gradient(45deg, #62CDFF, #fff);
+    border-radius: 20px;
+    position: absolute;
+    display: none; 
+    min-width: 160px;
+    z-index: 1;
+}
+header nav .logo li:hover ul.Dropdown{
+    display: block;
+    margin-top: 15px;
+    display:block;
+    top: 42px;
+}
+header nav .logo .Dropdown li{
+    display: block;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+header nav .logo .Dropdown li a{
+    background-color: #EB455F;
+    color: #fff;
+}
+header nav .logo .Dropdown li a:hover{
+    background-color: #03C988;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+/* Edit thanh tìm kiếm */
+header nav .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search input{
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+header nav .search input:hover{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 1;
+}
+header nav .search input::placeholder{
+    color: #000;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 13px;
+}
+header section
+{
+    width: 100%;
+    height: 90%;
+}
+/* Edit Tiêu Đề Thể Loại */
+header section .title
+{
+    margin: 30px;
+    margin-left: 130px;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    background: linear-gradient(45deg, #fff, #F5C6EC);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* Edit Danh Sách Phim Theo Thể Loại */
+header section .list
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    width: 100%;
+    height: 85%;
+    overflow-y: auto;
+    /* Tạo Con Lăn Để Kéo Xuống */
+}
+/* Edit Từng Bộ Phim */
+header section .list .filminfor
+{
+    margin-left: 50px;
+    margin-top: 50px;
+    
+    border: 3px solid #EB455F;
+    padding-top: 2px;
+    padding-left: 20px;
+    width: 90%;
+    height: 180px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Edit Hình Trong Bộ Phim */
+header section .list .filminfor .img
+{
+    border: 2px solid #03C988;
+    width: 100px;
+    height: 150px;
+    border-radius: 50px;
+    margin-right: 50px;
+}
+header section .list .filminfor .img img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+/* Edit Phần Thông Tin Phim */
+header section .list .filminfor .des
+{
+    border: 2px solid #03C988;
+    width: 700px;
+    height: 130px;
+    border-radius: 50px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section .list .filminfor .des .descr
+{
+    border: 2px solid #03C988;
+    width: 85%;
+    height: 100%;
+    border-radius: 50px 0 0 50px;
+    text-align: justify;
+    padding: 15px;
+    font-size: 15px;
+}
+header section .list .filminfor .des .descr h4
+{
+    color: #EB455F;
+}
+header section .list .filminfor .des .descr p
+{
+    color: #fff;
+}
+header section .list .filminfor .des .IMDB
+{
+    border: 2px solid #03C988;
+    width: 15%;
+    height: 100%;
+    border-radius: 0 50px 50px 0;
+    padding: 10px;
+    padding-top: 45px;
+    padding-left: 20px;
+}
+header section .list .filminfor .des .IMDB span
+{
+    padding: 5px;
+    background-color: yellow;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+}
+header section .list .filminfor .des .IMDB h7
+{
+    color: #fff;
+}
+/* Edit Nút Xem Phim */
+header section .list .filminfor .Playbtn{
+    width: 80px;
+    height: 130px;
+    border-radius: 50px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header section .list .filminfor .Playbtn a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #EA5455;
+    background-color: #EA5455;
+    transition: 0.3s;
+    color: #fff;
+    font-size: 30px;
+}
+header section .list .filminfor .Playbtn a:hover{
+    cursor: pointer;
+    border: 2px solid #03C988;
+    background-color: #BEF0CB;
+    color: #EA5455;
+}

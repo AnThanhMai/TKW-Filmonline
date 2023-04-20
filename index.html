@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleHome.css">
+    <link rel="icon" href="img/ICON.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1cd2ecc33e.js" crossorigin="anonymous"></script>
+    <title>Hai Con Gian</title>
+</head>
+<body>
+<header>
+    <video src="video/background.mp4" autoplay muted></video>
+    <nav>
+        <div class="logo">
+            <ul>
+                <li><a href="index.html">Trang Chủ <i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#">Thể Loại<i class="fa-solid fa-list"></i></a>
+                    <ul class="Dropdown">
+                        <li><a href="List.Actionfilms.html">Hành Động</a></li>
+                        <li><a href="List.Horrifiedfilms.html">Kinh Dị</a></li>
+                        <li><a href="List.Romancefilms.html">Tình Cảm</a></li>
+                        <li><a href="List.Sciencefictionfilms.html">Khoa Học Viễn Tưởng</a></li>  
+                    </ul>
+                </li>
+                <li><a href="Login.html">Tài Khoản <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="Contact.html">Liên Hệ <i class="fa-solid fa-phone-volume"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Bạn Muốn Xem Gì ?">
+        </div>
+    </nav>
+    <div class="content">
+        <h1>PHI VỤ TRIỆU ĐÔ</h1>
+        <p>Phi vụ triệu đô là một bộ phim truyền hình chính kịch tội phạm đề tài trộm cướp của Tây Ban Nha do Álex Pina sáng tạo. Loạt phim xoay quanh hai vụ cướp, một ở Xưởng in tiền Hoàng gia Tây Ban Nha và một ở Ngân hàng Tây Ban Nha,
+do Giáo sư lên kế hoạch từ lâu và nắm quyền lãnh đạo.</p>
+        <div class="details">
+            <h6>A Netflix Film</h6>
+            <h5 id="gen">Thriller</h5>
+            <h4>2021</h4>
+            <h3 id="rate"><span>IMDB</span><i class="fa-solid fa-star"></i> 8.2 / 10</h3>
+        </div>
+        <div class="button">
+            <a href="ListFilms/25.Phivutrieudo.html">Xem<i class="fa-solid fa-circle-play"></i></a>
+            <a href="#">Tải Xuống<i class="fa-solid fa-circle-down"></i></a>
+        </div>
+    </div>
+    <section>
+        <h4>Phim Thịnh Hành</h4>
+        <i class="fa-sharp fa-solid fa-circle-chevron-left" id="left"></i>
+        <i class="fa-sharp fa-solid fa-circle-chevron-right" id="right"></i>
+        <div class="cards">
+            <!-- PHIM SO 1 -->
+            <a href="ListFilms/1.JSW-Fallenkingdom.html" class="card">
+                <img src="img/Poster Films/JSW-FALLENKINGDOM.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 2 -->
+            <a href="ListFilms/2.Titanic.html" class="card">
+                <img src="img/Poster Films/TITANIC.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 3 -->
+            <a href="ListFilms/3.Avatar2.html" class="card">
+                <img src="img/Poster Films/AVATAR 2.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 34 -->
+            <a href="ListFilms/4.Squidgame.html" class="card">
+                <img src="img/Poster Films/SQUID GAMES.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 5 -->
+            <a href="ListFilms/5.Wednesday.html" class="card">
+                <img src="img/Poster Films/WEBNESDAY.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 6 -->
+            <a href="ListFilms/6.JSW-Dominion.html" class="card">
+                <img src="img/Poster Films/JSW-DOMINION.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 7 -->
+            <a href="ListFilms/7.Annabelle.html" class="card">
+                <img src="img/Poster Films/ANNABELLE.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 8 -->
+            <a href="ListFilms/8.Avengers.html" class="card">
+                <img src="img/Poster Films/AVENGERS-INFINITY- WAR.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 9 -->
+            <a href="ListFilms/9.GodvsKong.html" class="card">
+                <img src="img/Poster Films/GOD VS KONG.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 10 -->
+            <a href="ListFilms/10.EEAAO.html" class="card">
+                <img src="img/Poster Films/EVERYTHING EVERYWHERE ALL AT ONCE.jpg" alt="" class="poster">       
+            </a>
+            <!-- PHIM SO 11 -->
+            <a href="ListFilms/11.Spiderman.html" class="card">
+                <img src="img/Poster Films/SPIDERMAN.jpg" alt="" class="poster">       
+            </a>
+            </span>  
+        </div>
+    </section>
+    <script lang="Javascript">
+    var left_btn = document.getElementsByClassName('fa-sharp fa-solid fa-circle-chevron-left')[0];
+    var right_btn = document.getElementsByClassName('fa-sharp fa-solid fa-circle-chevron-right')[0];
+    var cards = document.getElementsByClassName('cards')[0];
+
+    left_btn.addEventListener('click', () => {
+        cards.scrollLeft -=50;
+    })
+
+    right_btn.addEventListener('click', () => {
+        cards.scrollLeft +=50;
+    })
+    </script>
+</header>
+</body>
+</html>

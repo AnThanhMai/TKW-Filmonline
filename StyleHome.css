@@ -1,0 +1,320 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #393E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position: relative;
+    border: 1px solid #fff;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 5px #000;
+}
+header::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/squidgame.jpg') no-repeat center/cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+header::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+}
+/* Video Nền */
+header video{
+    position: absolute;
+    height: 150%;
+    left: -30%;
+    top: -20%;
+    z-index: -1;
+}
+header nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Edit phần logo */
+header nav .logo ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo ul li{
+    padding: 5px 10px;
+}
+header nav .logo ul li a{
+    border: 3px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li i{
+    margin: 0 5px;
+}
+/* Edit Dropdown Menu Button */
+header nav .logo .Dropdown{
+    width: 230px;
+    height: 200px;
+    background: linear-gradient(45deg, #62CDFF, #fff);
+    border-radius: 20px;
+    position: absolute;
+    display: none; 
+    min-width: 160px;
+    z-index: 1;
+}
+header nav .logo li:hover ul.Dropdown{
+    display: block;
+    margin-top: 15px;
+    display:block;
+    top: 42px;
+}
+header nav .logo .Dropdown li{
+    display: block;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+header nav .logo .Dropdown li a{
+    background-color: #EB455F;
+    color: #fff;
+}
+header nav .logo .Dropdown li a:hover{
+    background-color: #03C988;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+/* Edit thanh tìm kiếm */
+header nav .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search input{
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+header nav .search input:hover{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 1;
+}
+header nav .search input::placeholder{
+    color: #000;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* Eidt nút chuyển màu nền trang */
+header nav .changecolorbtn button{
+    color: #fff;
+    width: 90px;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+/* Edit nội dung phim PHI VỤ TRIỆU ĐÔ */
+header .content {
+    position: relative;
+    color: #fff;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+header .content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+header .content p {
+    text-align: justify;
+    color: #fff;
+    font-size: 15px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+header .content .details {
+    display: flex;
+    align-items: center;
+}
+header .content .details h6 {
+    color: rgba(255, 0, 0, 0.695);
+    font-size: 15px;
+    margin-right: 10px;
+}
+header .content .details h5 {
+    color: green;
+    font-size: 15px;
+    margin-right: 10px;
+}
+header .content .details h4 {
+    color: #fff;
+    font-size: 15px;
+    margin-right: 10px;
+}
+header .content .details h3 {
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+header .content .details h3 span {
+    background-color: yellow;
+    color: #000000;
+    font-weight: 900;
+    padding: 2px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+header .content .details h3 i {
+    margin: 0 5px;
+}
+/* Edit nút xem và tải  */
+header .content .button{
+    margin-top:  20px;
+    display: flex;
+    align-items: center;
+}
+header .content .button a{
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(to right, #62CDFF, #C9EEFF);
+    border-radius: 10px;
+    color: #000;
+    margin-left: 10px;
+    animation: button_ani 1s linear infinite;
+}
+header .content .button i{
+    margin: 0 5px;
+}
+header .content .button a:hover{
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(to right, #62CDFF, #C9EEFF);
+    border-radius: 10px;
+    color: red;
+    margin-left: 10px;
+}
+/* Edit phần phim thịnh hành */
+header section{
+    position: relative;
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    padding: 0px 30px;
+    font-size: 20px;
+    color: #fff; 
+}
+header section .cards{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+header section .cards .card{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 120px;
+    height: 180px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    opacity: 0.8;
+}
+header section .cards .card:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+/* Edit phần thanh cuộn phim thịnh hành */
+header section .cards::-webkit-scrollbar{
+    display: none;
+}
+header section #left, #right{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    width: 25px;
+    height: 5px;
+    background-color: rgb(255, 255, 255, .3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s linear;
+    z-index: 9999999;
+    opacity: 0.5;
+}
+header section #right{
+    left: unset;
+    right: 3%;
+}
+header section:hover #right{
+    opacity: 1;
+}
+header section:hover #left{
+    opacity: 1;
+}
+/* Edit phần poster phim */
+header section .cards .card .poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    font-style: i;
+}
+

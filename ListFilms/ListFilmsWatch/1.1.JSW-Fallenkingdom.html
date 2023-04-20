@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="StyleFilmsWatch.css">
+    <link rel="icon" href="img/ICON.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1cd2ecc33e.js" crossorigin="anonymous"></script>
+    <title>Hai Con Gian</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <ul>
+                <li><a href="/HTML/Project/index.html">Trang Chủ <i class="fa-solid fa-house"></i></a></li>
+                <li>
+                    <a href="#">Thể Loại<i class="fa-solid fa-list"></i></a>
+                    <ul class="Dropdown">
+                        <li><a href="/HTML/Project/List.Actionfilms.html">Hành Động</a></li>
+                        <li><a href="/HTML/Project/List.Horrifiedfilms.html">Kinh Dị</a></li>
+                        <li><a href="/HTML/Project/List.Romancefilms.html">Tình Cảm</a></li>
+                        <li><a href="/HTML/Project/List.Sciencefictionfilms.html">Khoa Học Viễn Tưởng</a></li>  
+                    </ul>
+                </li>
+                <li><a href="/HTML/Project/Login.html">Tài Khoản <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="/HTML/Project/Contact.html">Liên Hệ <i class="fa-solid fa-phone-volume"></i></a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Bạn Muốn Xem Gì ?">
+        </div>
+    </nav>
+    <section>
+        <div class="contentfilms">
+            <div class="film">
+                <video id="video" src="/HTML/Project/video/Trailer Films/JSW-FALLENKINGDOM.mp4" autoplay></video>
+            </div>
+            <div class="right">
+                <div class="namefilm">
+                    <div class="name">
+                        <h2>Jurassic World: Fallen Kingdom</h2>
+                        <span class="IMDB">IMDB</span><i class="fa-solid fa-star"></i> 6.1 / 10
+                    </div>
+                    <div class="button">
+                        <button class="Play" onclick="Play();">Play</button>
+                        <button class="Pause" onclick="Pause();">Pause</button>
+                        <button class="Full" onclick="openFullscreen();">Fullscreen</button>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="comment">
+                        COMMENTS
+                    </div>
+                    <div class="commentcreated">
+                        <!-- NGUOI SO 1 -->
+                        <div class="human">
+                            <div class="avt">
+                                <i class="fa-sharp fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <div class="text">
+                                <p>This is a good film!!!</p>
+                            </div>
+                        </div>
+                        <!-- NGUOI SO 2 -->
+                        <div class="human">
+                            <div class="avt">
+                                <i class="fa-sharp fa-solid fa-user-tie"></i>
+                            </div>
+                            <div class="text">
+                                <p>So Cool</p>
+                            </div>
+                        </div>
+                        <!-- NGUOI SO 3 -->
+                        <div class="human">
+                            <div class="avt">
+                                <i class="fa-sharp fa-solid fa-user-ninja"></i>
+                            </div>
+                            <div class="text">
+                                <p>I want to watch more films like this</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thanh gửi comment -->
+                    <div class="commenttab">
+                        <input type="text" name="" id="" placeholder="Comment Here">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- JAVA SCRIPT  -->
+    <script lang="javascripts">
+        var full = document.getElementById("video");
+        function openFullscreen(){
+            if(full.requestFullscreen)
+            {
+                full.requestFullscreen();
+            }
+        }
+        var vid = document.getElementById("video");
+        function Play(){
+            vid.play();
+        }
+        function Pause(){
+            vid.pause();
+        }
+    </script>
+</header>
+</body>
+</html>

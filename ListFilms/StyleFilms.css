@@ -1,0 +1,235 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #393E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position: relative;
+    border: 1px solid #fff;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 5px #000;
+}
+header::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('img/squidgame.jpg') no-repeat center/cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+header::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000000);
+}
+
+
+header nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Edit phần thanh Nav */
+header nav .logo ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo ul li{
+    padding: 5px 10px;
+}
+header nav .logo ul li a{
+    border: 3px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li i{
+    margin: 0 5px;
+}
+/* Edit Dropdown Menu Button */
+header nav .logo .Dropdown{
+    width: 230px;
+    height: 200px;
+    background: linear-gradient(45deg, #62CDFF, #fff);
+    border-radius: 20px;
+    position: absolute;
+    display: none; 
+    min-width: 160px;
+    z-index: 1;
+}
+header nav .logo li:hover ul.Dropdown{
+    display: block;
+    margin-top: 15px;
+    display:block;
+    top: 42px;
+}
+header nav .logo .Dropdown li{
+    display: block;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+header nav .logo .Dropdown li a{
+    background-color: #EB455F;
+    color: #fff;
+}
+header nav .logo .Dropdown li a:hover{
+    background-color: #03C988;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+/* Edit thanh tìm kiếm */
+header nav .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search input{
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+header nav .search input:hover{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 1;
+}
+header nav .search input::placeholder{
+    color: #000;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 13px;
+}
+/* Edit phần nội dung trang */
+header section .contentfilms{
+    height: 550px;
+    margin: 40px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+/* Edit phần trailer */
+header section .contentfilms .trailer{
+    border: 3px solid #fff;
+    border-radius: 5px;
+    width: 70%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header section .contentfilms .trailer video{
+    width: 100%;
+    height: 100%;
+}
+
+/* Edit nút xem và tải  */
+header section .contentfilms .infor{
+    width: 30%;
+    height: 80.3%;
+}
+/* Edit phần content trailer films */
+header section .contentfilms .infor .subfilm{
+    width: 100%;
+    height: 80.3%;
+}
+header section .contentfilms .infor .subfilm h4{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: #000;
+    padding: 10px 25px;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #fff;
+}
+header section .contentfilms .infor .subfilm p{
+    padding: 20px;
+    text-align: justify;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+header section .contentfilms .infor .subfilm h7{
+    padding-left: 20px;
+    color: #fff;
+}
+header section .contentfilms .infor .subfilm h7 span{
+    color: #000;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 8px;
+}
+/* Edit nút xem và tải  */
+header section .contentfilms .infor .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section .contentfilms .infor .button a{
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-top: 50px;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(to right, #62CDFF, #C9EEFF);
+    border-radius: 10px;
+    color: #000;
+}
+header section .contentfilms .infor .button i{
+    margin: 0 5px;
+}
+header section .contentfilms .infor .button a:hover{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    background: linear-gradient(to right, #62CDFF, #C9EEFF);
+    border-radius: 10px;
+    color: red;
+}

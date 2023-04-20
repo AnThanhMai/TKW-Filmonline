@@ -1,0 +1,211 @@
+/*About US CSS*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #393E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    position: relative;
+    border: 1px solid #fff;
+    width: 80%;
+    height: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 5px #000;
+}
+header nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav .logo ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header nav .logo ul li{
+    padding: 5px 10px;
+}
+header nav .logo ul li a{
+    border: 3px solid #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    font-size: 15px;
+    font-weight:  bold;
+    transition: 0.5s;
+}
+header nav .logo ul li i{
+    margin: 0 5px;
+}
+/* Edit Dropdown Menu Button */
+header nav .logo .Dropdown{
+    width: 230px;
+    height: 200px;
+    background: linear-gradient(45deg, #62CDFF, #fff);
+    border-radius: 20px;
+    position: absolute;
+    display: none; 
+    min-width: 160px;
+    z-index: 1;
+}
+header nav .logo li:hover ul.Dropdown{
+    display: block;
+    margin-top: 15px;
+    display:block;
+    top: 42px;
+}
+header nav .logo .Dropdown li{
+    display: block;
+    color: #fff;
+    margin: 0;
+    margin-top: 15px;
+}
+header nav .logo .Dropdown li a{
+    background-color: #EB455F;
+    color: #fff;
+}
+header nav .logo .Dropdown li a:hover{
+    background-color: #03C988;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+/* Edit thanh tìm kiếm */
+header nav .search{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+header nav .search input{
+    padding: 8px;
+    margin-top: 20px;
+    margin-right: 30px;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    opacity: 0.8;
+}
+header nav .search input:hover{
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 1;
+}
+header nav .search input::placeholder{
+    color: #000;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 13px;
+}
+header section
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 90%;
+}
+header section .name
+{
+    width: 100%;
+    height: 10%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(45deg, #62CDFF, #EB455F);
+}
+header section .imgandinfor
+{
+    width: 100%;
+    height: 90%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header section .imgandinfor .information
+{
+    width: 65%;
+    height: 90%;
+    margin-right: 20px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    text-align: justify;
+    padding: 20px;
+}
+header section .imgandinfor .information h4
+{
+    width: 50%;
+    font-size: 20px;
+    color: #000;
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(10deg, #03C988, #fff);
+    border-radius: 20px;
+}
+header section .imgandinfor .information p
+{
+    padding-left: 40px;
+    color: #ffffff;
+    margin: 5px;
+    border-radius: 20px;
+}
+header section .imgandinfor .information h2
+{
+    margin-top: 90px;
+    padding: 10px;
+    background: linear-gradient(10deg, #EB455F, #fff);
+    border-radius: 20px;
+}
+header section .imgandinfor .img
+{
+    width: 25%;
+    height: 90%;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    box-shadow: 10px 10px 10px #000;
+    background: linear-gradient(45deg, #fff, #393E46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header section .imgandinfor .img .imgclass
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header section .imgandinfor .img .imgclass img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
